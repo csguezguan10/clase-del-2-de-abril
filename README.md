@@ -1,4 +1,9 @@
 # clase-del-2-de-abril
+
+## Integrantes 
+Carlos Stiven Guezguan         Codigo 96039                           
+Juan Jose Martinez             Codigo 105353
+
 # Sintonización PID en Lazo Cerrado
 
 La sintonización PID en lazo cerrado es una técnica muy utilizada en sistemas de control automático para ajustar los parámetros del controlador PID (proporcional, integral y derivativo) a partir del comportamiento real del sistema. Este método se enfoca en obtener una respuesta deseada sin necesidad de conocer el modelo matemático exacto, lo cual lo hace práctico y aplicable a sistemas reales. En esta clase se abordaron los métodos más utilizados: Ziegler & Nichols y el método del relé, junto con el tratamiento del fenómeno wind-up y sus estrategias de corrección.
@@ -54,15 +59,9 @@ $$T_d = \frac{Pu}{8} = 0.236$$
 
 💡**Ejemplo 2:** Cálculo de Kc en método del relé:
 
-$$K_c = \frac{4d}{\pi (A_u^2 - \varepsilon^2)}$$
+$$K_c = \frac{4d}{\pi (A_u^2 - \varepsilon^2)}$$s
 
-## 6. Figuras
-
-![Figura de oscilación sostenida](images/pid/osc_sostenida.png)
-
-Figura 1. Ejemplo de oscilación sostenida en método Ziegler & Nichols
-
-## 7. Tablas
+## 6. Tablas
 
 💡**Ejemplo 3:** Fórmulas empíricas de Ziegler & Nichols
 
@@ -74,11 +73,7 @@ Figura 1. Ejemplo de oscilación sostenida en método Ziegler & Nichols
 
 Tabla 1. Parámetros recomendados por Ziegler & Nichols
 
-## 8. Código
-
-
-
-## 9. Ejercicios
+## 7. Ejercicios
 
 # 📚 Ejercicio 1
 **Enunciado:** Si un sistema presenta oscilaciones sostenidas con Kp = 50 y Pu = 2.5 s, calcule los parámetros de un controlador PID.
@@ -95,11 +90,11 @@ $$T_d = \frac{2.5}{8} = 0.3125$$
 **Solución:**  
 $$K_c = \frac{4 \cdot 0.5}{\pi (0.4^2 - 0.05^2)} \approx 10.83$$
 
-## 10. Conclusiones
+## 8. Conclusiones
 
 Los métodos de sintonización en lazo cerrado permiten ajustar controladores PID de forma práctica y directa, sin requerir modelos matemáticos detallados del sistema. Tanto Ziegler & Nichols como el método del relé son herramientas válidas y vigentes. Además, es fundamental considerar el fenómeno wind-up e implementar alguna estrategia de anti wind-up para asegurar un comportamiento adecuado en sistemas reales.
 
-## 11. Referencias
+## 9. Referencias
 
 - Presentación "Sintonización de controladores PID en lazo cerrado", Ing. Jorge Eduardo Cote B.
 - Aström, K.J. y T. Hägglund – "Benchmark Systems for PID Control", IFAC Workshop, 2000.
